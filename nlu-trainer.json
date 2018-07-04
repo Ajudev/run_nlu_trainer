@@ -1,0 +1,280 @@
+{
+  "rasa_nlu_data": {
+	"common_examples": [
+      {
+        "text": "i would like to book a room for tomorrow",
+        "intent": "book_room",
+        "entities": [
+          {
+            "start": 32,
+            "end": 40,
+            "value": "tomorrow",
+            "entity": "booking_date"
+          }
+        ]
+      },
+      {
+        "text": "Book a room for day after tomorrow",
+        "intent": "book_room",
+        "entities": [
+          {
+            "start": 16,
+            "end": 34,
+            "value": "day after tomorrow",
+            "entity": "booking_date"
+          }
+        ]
+      },
+      {
+        "text": "Reserve a room for Tuesday",
+        "intent": "book_room",
+        "entities": [
+          {
+            "start": 19,
+            "end": 26,
+            "value": "Tuesday",
+            "entity": "booking_date"
+          }
+        ]
+      },
+      {
+        "text": "i would like to reserve a room for 08/072018",
+        "intent": "book_room",
+        "entities": [
+          {
+            "start": 35,
+            "end": 44,
+            "value": "08/072018",
+            "entity": "booking_date"
+          }
+        ]
+      },
+      {
+        "text": "save a room on 10th April 2018 at 12:30 pm for half an hour",
+        "intent": "book_room",
+        "entities": [
+          {
+            "start": 15,
+            "end": 30,
+            "value": "10th April 2018",
+            "entity": "booking_date"
+          },
+          {
+            "start": 34,
+            "end": 42,
+            "value": "12:30 pm",
+            "entity": "booking_start_time"
+          },
+          {
+            "start": 47,
+            "end": 59,
+            "value": "half an hour",
+            "entity": "booking_duration"
+          }
+        ]
+      },
+      {
+        "text": "reserve a room for 10 members on 12/07/2018 at 1:00 pm for 2 hours",
+        "intent": "book_room",
+        "entities": [
+          {
+            "start": 33,
+            "end": 43,
+            "value": "12/07/2018",
+            "entity": "booking_date"
+          },
+          {
+            "start": 47,
+            "end": 54,
+            "value": "1:00 pm",
+            "entity": "booking_start_time"
+          },
+          {
+            "start": 59,
+            "end": 66,
+            "value": "2 hours",
+            "entity": "booking_duration"
+          },
+          {
+            "start": 19,
+            "end": 29,
+            "value": "10 members",
+            "entity": "visitors_number"
+          }
+        ]
+      },
+      {
+        "text": "book the Innovate room from 12 pm to 2 pm on Thursday for 10 people ",
+        "intent": "book_room",
+        "entities": [
+          {
+            "start": 9,
+            "end": 22,
+            "value": "Innovate room",
+            "entity": "room_name"
+          },
+          {
+            "start": 37,
+            "end": 41,
+            "value": "2 pm",
+            "entity": "booking_end_time"
+          },
+          {
+            "start": 45,
+            "end": 53,
+            "value": "Thursday",
+            "entity": "booking_date"
+          },
+          {
+            "start": 58,
+            "end": 67,
+            "value": "10 people",
+            "entity": "visitors_number"
+          },
+          {
+            "start": 28,
+            "end": 33,
+            "value": "12 pm",
+            "entity": "booking_start_time"
+          }
+        ]
+      },
+      {
+        "text": "show me list of available rooms",
+        "intent": "book_room",
+        "entities": []
+      },
+      {
+        "text": "book a room for me",
+        "intent": "book_room",
+        "entities": []
+      },
+      {
+        "text": "reserve the collaborate room on April 12th 2018 for 10 persons from 9 am for 1 hour and name the meeting as executive meeting ",
+        "intent": "book_room",
+        "entities": [
+          {
+            "start": 108,
+            "end": 125,
+            "value": "executive meeting",
+            "entity": "meeting_name"
+          },
+          {
+            "start": 12,
+            "end": 28,
+            "value": "collaborate room",
+            "entity": "room_name"
+          },
+          {
+            "start": 32,
+            "end": 47,
+            "value": "April 12th 2018",
+            "entity": "booking_date"
+          },
+          {
+            "start": 52,
+            "end": 62,
+            "value": "10 persons",
+            "entity": "visitors_number"
+          },
+          {
+            "start": 68,
+            "end": 72,
+            "value": "9 am",
+            "entity": "booking_start_time"
+          },
+          {
+            "start": 77,
+            "end": 83,
+            "value": "1 hour",
+            "entity": "booking_duration"
+          }
+        ]
+      },
+      {
+        "text": "book future room on 12th April 2018 from 9 am to 11 pm for 2 hours for 10 members and name it as workshop",
+        "intent": "book_room",
+        "entities": [
+          {
+            "start": 5,
+            "end": 16,
+            "value": "future room",
+            "entity": "room_name"
+          },
+          {
+            "start": 20,
+            "end": 35,
+            "value": "12th April 2018",
+            "entity": "booking_date"
+          },
+          {
+            "start": 41,
+            "end": 45,
+            "value": "9 am",
+            "entity": "booking_start_time"
+          },
+          {
+            "start": 49,
+            "end": 54,
+            "value": "11 pm",
+            "entity": "booking_end_time"
+          },
+          {
+            "start": 59,
+            "end": 66,
+            "value": "2 hours",
+            "entity": "booking_duration"
+          },
+          {
+            "start": 71,
+            "end": 81,
+            "value": "10 members",
+            "entity": "visitors_number"
+          },
+          {
+            "start": 97,
+            "end": 105,
+            "value": "workshop",
+            "entity": "meeting_name"
+          }
+        ]
+      },
+      {
+        "text": "reserve a room on sunday",
+        "intent": "book_room",
+        "entities": [
+          {
+            "start": 18,
+            "end": 24,
+            "value": "sunday",
+            "entity": "booking_date"
+          }
+        ]
+      },
+      {
+        "text": "book a camera on Wednesday from 9 am to 1 pm ",
+        "intent": "book_equip",
+        "entities": [
+          {
+            "start": 17,
+            "end": 26,
+            "value": "Wednesday",
+            "entity": "booking_date"
+          },
+          {
+            "start": 32,
+            "end": 36,
+            "value": "9 am",
+            "entity": "booking_start_time"
+          },
+          {
+            "start": 40,
+            "end": 44,
+            "value": "1 pm",
+            "entity": "booking_end_time"
+          }
+        ]
+      }
+	]
+  }
+}
